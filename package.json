@@ -1,0 +1,22 @@
+{
+  "name": "destinationapp",
+  "version": "1.0.0",
+  "description": "App to get distances",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veeraraghavan/CFGettingStarted.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veeraraghavan/CFGettingStarted/issues"
+  },
+  "homepage": "https://github.com/veeraraghavan/CFGettingStarted#readme",
+  "dependencies": {
+    "npm": "^6.4.1"
+  }
+}

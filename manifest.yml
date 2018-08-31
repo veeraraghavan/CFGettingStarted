@@ -1,0 +1,8 @@
+--- 
+applications: 
+  - 
+    buildpack: nodejs_buildpack
+    command: "node app.js"
+    host: distancecalculator
+    memory: 128M
+    name: distancecalculator
