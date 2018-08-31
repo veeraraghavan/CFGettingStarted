@@ -1,5 +1,6 @@
 'use strict';
 let request = require('request');
+let url = require('url');
 
 
 module.exports = (app)=>{
@@ -9,12 +10,13 @@ module.exports = (app)=>{
         //https://maps.googleapis.com/maps/api/distancematrix/json?origins=Epic%20way%20San%20Jose%20California&destinations=3450%20Hillview%20Avenue%20Palto%20Alto%20California&mode=driving&language=en
         let source = "";
         let destination = ""
-        if(requ.query.src){
-            source = requ.query.src;
+        let queryObj = url.parse(requ.url,true).query;
+        if(queryObj.src){
+            source = queryObj.src;
 
         }
-        if(requ.query.dest){
-            destination = requ.query.dest;
+        if(queryObj.dest){
+            destination = queryObj.dest;
             
         }
         if (source && destination) {
